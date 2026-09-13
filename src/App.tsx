@@ -1,12 +1,12 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
       <section id="center">
-        
-          <h1>Get started</h1>
+        <Header></Header>
           
         
       </section>
