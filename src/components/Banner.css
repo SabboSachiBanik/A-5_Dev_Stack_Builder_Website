@@ -1,0 +1,64 @@
+.gradient-text {
+  /* 1. Sets the linear gradient from left to right (90 degrees) */
+  background-image: linear-gradient(90deg, #FF5722 0%, #D81B7E 50%, #7C3AED 100%);
+  
+  /* 2. Clips the background color strictly to the shape of the letters */
+  background-clip: text;
+  -webkit-background-clip: text; /* Required for Safari/Chrome support */
+  
+  /* 3. Makes the text see-through so the background shines through it */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Required for Safari/Chrome support */
+}
+
+/* Buttons-------------------------- */
+.explore-button {
+  /* Default Styles */
+  background-image: linear-gradient(90deg, #F97316 0%, #EC4899 100%);
+  color: #ffffff;
+  
+  /* Setting up smooth animated changes */
+  transition: background-image 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.explore-button:hover {
+  /* hover:bg-none hover:bg-transparent */
+  background-image: none;
+  background-color: transparent;
+  
+  /* hover:border-[#cad1dc] */
+  border-color: #cad1dc;
+  
+  /* hover:text-black */
+  color: #000000;
+}
+
+
+/* -------------------- */
+
+.learn-more-button {
+  /* Default Styles */
+  border: 1px solid #cad1dc;      /* border-[#cad1dc] */
+  border-radius: 0.375rem;       /* rounded-md (6px) */
+  color: #000000;                /* text-black */
+  background-color: transparent; /* bg-transparent */
+  
+  /* Setting up smooth animated transitions */
+  transition: background-image 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.learn-more-button:hover {
+  /* hover:bg-gradient-to-r from-[#F97316] to-[#EC4899] */
+  background-image: linear-gradient(90deg, #F97316 0%, #EC4899 100%);
+  
+  /* Fallback color for hover layout */
+  background-color: #D91B7E;     /* hover:bg-[#D91B7E] */
+  
+  /* hover:text-white */
+  color: #ffffff;
+  
+  /* Optional: removes the gray border on hover so the gradient pops */
+  border-color: transparent;
+}
+
+

@@ -1,0 +1,19 @@
+.gradient-text {
+  /* 1. Sets the linear gradient from left to right (90 degrees) */
+  background-image: linear-gradient(90deg, #FF5722 0%, #D81B7E 50%, #7C3AED 100%);
+  
+  /* 2. Clips the background color strictly to the shape of the letters */
+  background-clip: text;
+  -webkit-background-clip: text; /* Required for Safari/Chrome support */
+  
+  /* 3. Makes the text see-through so the background shines through it */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Required for Safari/Chrome support */
+}
+
+
+
+/* -------------- */
+.Card-shadow {
+    box-shadow: 0 0 15px 4px rgba(128, 128, 128, 0.25);
+}
